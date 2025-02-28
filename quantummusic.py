@@ -3657,7 +3657,7 @@ def hyperparameter_search_optuna(analysis_dict, n_trials=10):
     final_entropy = measurement_distribution_entropy(final_counts)
 
     # 5) Optionally plot
-    plot_quantum_counts(final_counts)
+    #plot_quantum_counts(final_counts)
 
     # 6) Store
     analysis_dict["quantum_analysis_variational"] = {
@@ -3937,16 +3937,16 @@ def plot_quantum_counts(counts):
     """
     Plots the measurement distribution.
     """
-    outcomes = list(counts.keys())
-    frequencies = list(counts.values())
-    fig, ax = plt.subplots(figsize=(7, 4))
-    ax.bar(outcomes, frequencies, color='skyblue')
-    ax.set_xlabel("Measurement Outcome")
-    ax.set_ylabel("Counts")
-    ax.set_title("Quantum Measurement Distribution")
-    plt.xticks(rotation=45)
-    plt.tight_layout()
-    plt.show()
+    #outcomes = list(counts.keys())
+    #frequencies = list(counts.values())
+    #fig, ax = plt.subplots(figsize=(7, 4))
+    #ax.bar(outcomes, frequencies, color='skyblue')
+    #ax.set_xlabel("Measurement Outcome")
+    #ax.set_ylabel("Counts")
+    #ax.set_title("Quantum Measurement Distribution")
+    #plt.xticks(rotation=45)
+    #plt.tight_layout()
+    #plt.show()
 
 
 def run_and_store_quantum_analysis(analysis_dict):
@@ -4205,7 +4205,7 @@ def grade_single_file(file_name):
     analysis_dict = run_and_store_quantum_analysis(analysis_dict)
 
 
-    analysis_dict = run_and_store_variational_analysis(analysis_dict)
+    #analysis_dict = run_and_store_variational_analysis(analysis_dict)
 
     # ====== END NEW QUANTUM STEP ======
 
