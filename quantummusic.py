@@ -3657,7 +3657,7 @@ def hyperparameter_search_optuna(analysis_dict, n_trials=10):
     final_entropy = measurement_distribution_entropy(final_counts)
 
     # 5) Optionally plot
-    #plot_quantum_counts(final_counts)
+    plot_quantum_counts(final_counts)
 
     # 6) Store
     analysis_dict["quantum_analysis_variational"] = {
