@@ -1,4 +1,4 @@
-# GradingMusic
+# QuantumMelody
 
 My experiments grading vocal performance using classical feature engineering, ML baselines, and exploratory quantum-inspired representations.
 
